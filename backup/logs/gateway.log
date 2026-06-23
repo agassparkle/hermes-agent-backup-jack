@@ -1256,3 +1256,21 @@ telegram.error.RetryAfter: Flood control exceeded. Retry in 153 seconds
 2026-06-22 22:10:14,490 INFO gateway.run: response ready: platform=telegram chat=7018493241 time=52.6s api_calls=5 response=323 chars
 2026-06-22 23:11:16,570 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7018493241 (idle=3662s)
 2026-06-22 23:11:16,570 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-06-23 12:20:38,434 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:7018493241 (35 chars)
+2026-06-23 12:20:38,435 INFO gateway.run: inbound message: platform=telegram user=Agas chat=7018493241 msg='sup  ? can you make a build today ?' reply_to_id=None reply_to_text=''
+2026-06-23 12:20:44,641 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:dm:7018493241: final delivery already confirmed (streamed=True previewed=False content_delivered=True).
+2026-06-23 12:20:44,642 INFO gateway.run: response ready: platform=telegram chat=7018493241 time=6.2s api_calls=1 response=59 chars
+2026-06-23 12:21:56,201 INFO gateway.run: Image cache cleanup: removed 3 stale file(s)
+2026-06-23 13:21:45,624 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:7018493241 (7 chars)
+2026-06-23 13:21:45,625 INFO gateway.run: inbound message: platform=telegram user=Agas chat=7018493241 msg='model ?' reply_to_id=None reply_to_text=''
+2026-06-23 13:21:49,244 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:dm:7018493241: final delivery already confirmed (streamed=True previewed=False content_delivered=True).
+2026-06-23 13:21:49,244 INFO gateway.run: response ready: platform=telegram chat=7018493241 time=3.6s api_calls=1 response=43 chars
+2026-06-23 13:21:53,994 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7018493241 → 122 (session_reset)
+2026-06-23 13:21:54,018 INFO gateway.platforms.base: [Telegram] Sending response (193 chars) to 7018493241
+2026-06-23 13:21:56,294 INFO gateway.run: Image cache cleanup: removed 2 stale file(s)
+2026-06-23 14:21:56,370 INFO gateway.run: Image cache cleanup: removed 4 stale file(s)
+2026-06-23 14:21:56,371 INFO gateway.run: Document cache cleanup: removed 3 stale file(s)
+2026-06-23 15:21:56,457 INFO gateway.run: Document cache cleanup: removed 1 stale file(s)
+2026-06-23 18:01:12,816 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 19:21:56,794 INFO gateway.run: Document cache cleanup: removed 2 stale file(s)
+2026-06-23 20:21:56,879 INFO gateway.run: Document cache cleanup: removed 3 stale file(s)

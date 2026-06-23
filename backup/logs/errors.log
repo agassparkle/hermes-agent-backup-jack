@@ -610,3 +610,10 @@ RuntimeError: Could not determine home directory.
 2026-06-23 09:47:24,388 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
 2026-06-23 09:47:26,402 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
 2026-06-23 09:47:41,438 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 12:20:40,627 WARNING [20260622_195428_8e10ea1e] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:21:40.
+2026-06-23 12:20:40,719 WARNING [20260622_195428_8e10ea1e] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:21:40.
+2026-06-23 18:00:58,807 WARNING cron.scheduler: Job '228e7dfe4d17': configured workdir '/home/ubuntu/vault' no longer exists — running without it
+2026-06-23 18:01:00,918 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:02:00.
+2026-06-23 18:01:01,007 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:02:01.
+2026-06-23 18:01:05,336 WARNING [cron_228e7dfe4d17_20260623_180058] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "bash: /home/ubuntu/vault/auto-commit.sh: No such file or directory", "exit_code": 127, "error": null}
+2026-06-23 18:01:12,816 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build

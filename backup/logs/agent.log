@@ -9401,3 +9401,75 @@ RuntimeError: Could not determine home directory.
 2026-06-23 09:48:11,657 INFO plugins.memory.holographic: Auto-extracted 1 facts from conversation
 2026-06-23 09:48:11,671 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=Thread-10:250287121887648 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
 2026-06-23 09:48:11,683 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=Thread-11:250287113433504 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-flash
+2026-06-23 12:20:38,434 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:7018493241 (35 chars)
+2026-06-23 12:20:38,435 INFO gateway.run: inbound message: platform=telegram user=Agas chat=7018493241 msg='sup  ? can you make a build today ?' reply_to_id=None reply_to_text=''
+2026-06-23 12:20:38,609 INFO [20260622_195428_8e10ea1e] run_agent: OpenAI client created (agent_init, shared=True) thread=asyncio_0:262457790755232 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 12:20:40,627 WARNING [20260622_195428_8e10ea1e] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:21:40.
+2026-06-23 12:20:40,646 INFO [20260622_195428_8e10ea1e] hermes_cli.auth: Nous inference auth: using NAS invoke JWT
+2026-06-23 12:20:40,719 WARNING [20260622_195428_8e10ea1e] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:21:40.
+2026-06-23 12:20:40,729 INFO [20260622_195428_8e10ea1e] hermes_cli.auth: Nous inference auth: using NAS invoke JWT
+2026-06-23 12:20:40,985 INFO [20260622_195428_8e10ea1e] agent.memory_manager: Memory provider 'holographic' registered (2 tools)
+2026-06-23 12:20:40,986 INFO [20260622_195428_8e10ea1e] run_agent: Memory provider 'holographic' activated
+2026-06-23 12:20:40,990 INFO [20260622_195428_8e10ea1e] agent.turn_context: conversation turn: session=20260622_195428_8e10ea1e model=deepseek-v4-pro provider=deepseek platform=telegram history=149 msg='sup  ? can you make a build today ?'
+2026-06-23 12:20:41,036 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-2536 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 12:20:44,212 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-2536 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 12:20:44,212 INFO [20260622_195428_8e10ea1e] agent.conversation_loop: API call #1: model=deepseek-v4-pro provider=deepseek in=164665 out=84 total=164749 latency=3.2s cache=164608/164665 (100%)
+2026-06-23 12:20:44,498 INFO [20260622_195428_8e10ea1e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek-v4-pro api_calls=1/150 budget=1/150 tool_turns=52 last_msg_role=assistant response_len=59 session=20260622_195428_8e10ea1e
+2026-06-23 12:20:44,641 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:dm:7018493241: final delivery already confirmed (streamed=True previewed=False content_delivered=True).
+2026-06-23 12:20:44,642 INFO gateway.run: response ready: platform=telegram chat=7018493241 time=6.2s api_calls=1 response=59 chars
+2026-06-23 12:21:56,201 INFO gateway.run: Image cache cleanup: removed 3 stale file(s)
+2026-06-23 13:21:45,624 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:7018493241 (7 chars)
+2026-06-23 13:21:45,625 INFO gateway.run: inbound message: platform=telegram user=Agas chat=7018493241 msg='model ?' reply_to_id=None reply_to_text=''
+2026-06-23 13:21:45,700 INFO [20260622_195428_8e10ea1e] agent.turn_context: conversation turn: session=20260622_195428_8e10ea1e model=deepseek-v4-pro provider=deepseek platform=telegram history=151 msg='model ?'
+2026-06-23 13:21:45,752 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-2537 (_call):262457475002784 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 13:21:48,710 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-2537 (_call):262457475002784 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 13:21:48,711 INFO [20260622_195428_8e10ea1e] agent.conversation_loop: API call #2: model=deepseek-v4-pro provider=deepseek in=164685 out=25 total=164710 latency=3.0s cache=164608/164685 (100%)
+2026-06-23 13:21:49,007 INFO [20260622_195428_8e10ea1e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek-v4-pro api_calls=1/150 budget=1/150 tool_turns=52 last_msg_role=assistant response_len=43 session=20260622_195428_8e10ea1e
+2026-06-23 13:21:49,244 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:dm:7018493241: final delivery already confirmed (streamed=True previewed=False content_delivered=True).
+2026-06-23 13:21:49,244 INFO gateway.run: response ready: platform=telegram chat=7018493241 time=3.6s api_calls=1 response=43 chars
+2026-06-23 13:21:53,994 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7018493241 → 122 (session_reset)
+2026-06-23 13:21:54,000 INFO plugins.memory.holographic: Auto-extracted 1 facts from conversation
+2026-06-23 13:21:54,000 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=MainThread:262457944711200 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 13:21:54,018 INFO gateway.platforms.base: [Telegram] Sending response (193 chars) to 7018493241
+2026-06-23 13:21:56,294 INFO gateway.run: Image cache cleanup: removed 2 stale file(s)
+2026-06-23 14:21:56,370 INFO gateway.run: Image cache cleanup: removed 4 stale file(s)
+2026-06-23 14:21:56,371 INFO gateway.run: Document cache cleanup: removed 3 stale file(s)
+2026-06-23 15:21:56,457 INFO gateway.run: Document cache cleanup: removed 1 stale file(s)
+2026-06-23 18:00:58,806 INFO cron.scheduler: Running job 'vault-auto-commit' (ID: 228e7dfe4d17)
+2026-06-23 18:00:58,806 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-06-23 18:00:58,807 WARNING cron.scheduler: Job '228e7dfe4d17': configured workdir '/home/ubuntu/vault' no longer exists — running without it
+2026-06-23 18:00:58,854 INFO cron.scheduler: Job '228e7dfe4d17': loaded credential pool for provider deepseek with 1 entries
+2026-06-23 18:00:58,927 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-seq_0:262456836157856 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:00,918 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:02:00.
+2026-06-23 18:01:00,934 INFO hermes_cli.auth: Nous inference auth: using NAS invoke JWT
+2026-06-23 18:01:01,007 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:02:01.
+2026-06-23 18:01:01,018 INFO hermes_cli.auth: Nous inference auth: using NAS invoke JWT
+2026-06-23 18:01:01,203 INFO [cron_228e7dfe4d17_20260623_180058] agent.turn_context: conversation turn: session=cron_228e7dfe4d17_20260623_180058 model=deepseek-v4-pro provider=deepseek platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-06-23 18:01:01,263 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-2538 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:04,855 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-2538 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:04,856 INFO [cron_228e7dfe4d17_20260623_180058] agent.conversation_loop: API call #1: model=deepseek-v4-pro provider=deepseek in=14636 out=101 total=14737 latency=3.6s cache=3456/14636 (24%)
+2026-06-23 18:01:05,160 INFO [cron_228e7dfe4d17_20260623_180058] tools.terminal_tool: Creating new local environment for task default...
+2026-06-23 18:01:05,207 INFO [cron_228e7dfe4d17_20260623_180058] tools.environments.base: Session snapshot created (session=fb24ff361eed, cwd=/home/ubuntu)
+2026-06-23 18:01:05,208 INFO [cron_228e7dfe4d17_20260623_180058] tools.terminal_tool: local environment ready for task default
+2026-06-23 18:01:05,336 WARNING [cron_228e7dfe4d17_20260623_180058] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "bash: /home/ubuntu/vault/auto-commit.sh: No such file or directory", "exit_code": 127, "error": null}
+2026-06-23 18:01:05,354 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-2541 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:07,477 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-2541 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:07,478 INFO [cron_228e7dfe4d17_20260623_180058] agent.conversation_loop: API call #2: model=deepseek-v4-pro provider=deepseek in=14784 out=111 total=14895 latency=2.1s cache=14720/14784 (100%)
+2026-06-23 18:01:07,621 INFO [cron_228e7dfe4d17_20260623_180058] agent.tool_executor: tool search_files completed (0.14s, 71 chars)
+2026-06-23 18:01:07,639 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-2545 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:10,479 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-2545 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:10,479 INFO [cron_228e7dfe4d17_20260623_180058] agent.conversation_loop: API call #3: model=deepseek-v4-pro provider=deepseek in=14932 out=107 total=15039 latency=2.9s cache=14720/14932 (99%)
+2026-06-23 18:01:10,599 INFO [cron_228e7dfe4d17_20260623_180058] agent.tool_executor: tool terminal completed (0.11s, 82 chars)
+2026-06-23 18:01:10,618 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-2547 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:12,668 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-2547 (_call):262456819249568 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:12,669 INFO [cron_228e7dfe4d17_20260623_180058] agent.conversation_loop: API call #4: model=deepseek-v4-pro provider=deepseek in=15494 out=45 total=15539 latency=2.1s cache=14976/15494 (97%)
+2026-06-23 18:01:12,738 INFO [cron_228e7dfe4d17_20260623_180058] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek-v4-pro api_calls=4/150 budget=4/150 tool_turns=3 last_msg_role=assistant response_len=80 session=cron_228e7dfe4d17_20260623_180058
+2026-06-23 18:01:12,740 INFO cron.scheduler: Job 'vault-auto-commit' completed successfully
+2026-06-23 18:01:12,769 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-seq_0:262456836157856 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro
+2026-06-23 18:01:12,816 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 18:01:13,013 INFO cron.scheduler: Job '228e7dfe4d17': delivered to telegram:7018493241 via live adapter
+2026-06-23 18:06:43,011 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-06-23 19:21:56,794 INFO gateway.run: Document cache cleanup: removed 2 stale file(s)
+2026-06-23 20:00:59,030 INFO cron.scheduler: Job '82d53ce4155e' (no_agent): empty stdout — silent run
+2026-06-23 20:00:59,035 INFO cron.scheduler: Job '82d53ce4155e': agent returned [SILENT] — skipping delivery
+2026-06-23 20:21:56,879 INFO gateway.run: Document cache cleanup: removed 3 stale file(s)
