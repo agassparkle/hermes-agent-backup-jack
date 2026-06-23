@@ -1,0 +1,612 @@
+2026-06-20 14:47:43,232 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:48:43.
+2026-06-20 14:51:50,645 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:52:50.
+2026-06-20 14:51:56,831 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:52:56.
+2026-06-20 14:51:57,707 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:52:57.
+2026-06-20 14:51:57,731 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:52:57.
+2026-06-20 14:51:58,502 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:52:58.
+2026-06-20 14:51:58,526 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:52:58.
+2026-06-20 14:55:03,685 WARNING [20260620_145149_c4d434] agent.conversation_loop: Turn ended with pending tool result (agent may appear stuck). Turn ended: reason=fallback_prior_turn_content model=deepseek-v4-flash api_calls=2/150 budget=2/150 tool_turns=3 last_msg_role=tool response_len=7 session=20260620_145149_c4d434 last_tool=memory
+2026-06-20 14:55:59,861 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:56:59.
+2026-06-20 14:56:00,538 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:57:00.
+2026-06-20 14:56:00,593 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:57:00.
+2026-06-20 14:56:00,617 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:57:00.
+2026-06-20 14:56:01,064 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:57:01.
+2026-06-20 14:56:01,087 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:57:01.
+2026-06-20 14:57:35,225 WARNING [20260620_145559_7ce68c] agent.tool_executor: Tool read_file returned error (0.02s): {"error": "Access denied: /home/ubuntu/.hermes/.env is a Hermes credential store and cannot be read directly. Provider tools consume these credentials through internal channels. (Defense-in-depth \u20
+2026-06-20 14:58:22,530 WARNING [20260620_145559_7ce68c] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+2026-06-20 14:58:28,582 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-20 14:58:34,845 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:59:34.
+2026-06-20 14:58:35,007 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:59:35.
+2026-06-20 14:58:37,817 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-20 14:58:38,045 ERROR gateway.platforms.telegram: [Telegram] Failed to send Telegram message: Chat not found
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/gateway/platforms/telegram.py", line 2502, in send
+    msg = await self._bot.send_message(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 3115, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 1122, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 629, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 819, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Chat not found
+2026-06-20 14:58:38,052 WARNING cron.scheduler: Job 'ec16a1bb95a3': live adapter send to telegram:7018493241 failed (Chat not found), falling back to standalone
+2026-06-20 14:58:38,480 ERROR cron.scheduler: Job 'ec16a1bb95a3': delivery error: Telegram send failed: Chat not found
+2026-06-20 14:58:46,496 WARNING [20260620_145559_7ce68c] agent.tool_executor: Tool cronjob returned error (0.00s): {
+  "success": false,
+  "error": "Job with ID or name 'ec16a1bb95a3' not found. Use cronjob(action='list') to inspect jobs."
+}
+2026-06-20 14:58:48,608 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=28220 parent_name=hermes loadavg_1m=0.26 parent_cmdline='/home/ubuntu/.hermes/hermes-agent/venv/bin/python3 /home/ubuntu/.hermes/hermes-agent/venv/bin/hermes'
+2026-06-20 14:58:48,676 ERROR gateway.platforms.telegram: [Telegram] Failed to send Telegram message: Chat not found
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/gateway/platforms/telegram.py", line 2502, in send
+    msg = await self._bot.send_message(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 3115, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 1122, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 629, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 819, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Chat not found
+2026-06-20 14:58:48,740 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=28220 parent_name=hermes loadavg_1m=0.26 parent_cmdline='/home/ubuntu/.hermes/hermes-agent/venv/bin/python3 /home/ubuntu/.hermes/hermes-agent/venv/bin/hermes'
+2026-06-20 14:58:52,712 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:59:52.
+2026-06-20 14:58:52,754 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:59:52.
+2026-06-20 15:00:02,905 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-20 15:00:07,877 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:01:07.
+2026-06-20 15:00:08,063 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:01:08.
+2026-06-20 15:01:09,473 WARNING [20260620_150006_48389545] agent.tool_executor: Tool browser_navigate returned error (0.21s): {"success": false, "error": "Chrome not found. Checked:\n  - agent-browser cache: /home/ubuntu/.agent-browser/browsers\n  - System Chrome installations\n  - Puppeteer browser cache\n  - Playwright bro
+2026-06-20 16:15:10,690 WARNING [20260620_150006_48389545] agent.tool_executor: Tool browser_navigate returned error (1.64s): {"success": false, "error": "Chrome not found. Checked:\n  - agent-browser cache: /home/ubuntu/.agent-browser/browsers\n  - System Chrome installations\n  - Puppeteer browser cache\n  - Playwright bro
+2026-06-20 16:15:48,486 WARNING [20260620_150006_48389545] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "", "exit_code": 2, "error": null}
+2026-06-20 16:16:12,987 WARNING [20260620_150006_48389545] agent.tool_executor: Tool terminal returned error (0.11s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'numpy'", "exit_code": 1, "error": null}
+2026-06-20 16:16:28,979 WARNING [20260620_150006_48389545] agent.tool_executor: Tool patch returned error (0.00s): {"error": "Refusing to write to Hermes config file: /home/ubuntu/.hermes/config.yaml\nAgent cannot modify security-sensitive configuration. Edit ~/.hermes/config.yaml directly or use 'hermes config' i
+2026-06-20 16:16:48,122 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 16:17:48.
+2026-06-20 16:16:48,206 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 16:17:48.
+2026-06-20 17:01:55,424 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool browser_navigate returned error (1.34s): {"success": false, "error": "Chrome not found. Checked:\n  - agent-browser cache: /home/ubuntu/.agent-browser/browsers\n  - System Chrome installations\n  - Puppeteer browser cache\n  - Playwright bro
+2026-06-20 17:04:07,426 WARNING gateway.run: Unrecognized slash command /id from telegram — replying with unknown-command notice
+2026-06-20 17:07:22,887 WARNING gateway.run: Unauthorized user: 1467081316 (DK) on telegram
+2026-06-20 17:07:29,311 WARNING gateway.run: Unauthorized user: 1467081316 (DK) on telegram
+2026-06-20 17:07:57,262 WARNING gateway.run: Unauthorized user: 1467081316 (DK) on telegram
+2026-06-20 17:08:04,638 WARNING gateway.run: Unauthorized user: 1467081316 (DK) on telegram
+2026-06-20 17:09:05,271 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool patch returned error (0.00s): {"error": "Refusing to write to Hermes config file: /home/ubuntu/.hermes/config.yaml\nAgent cannot modify security-sensitive configuration. Edit ~/.hermes/config.yaml directly or use 'hermes config' i
+2026-06-20 17:09:16,220 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-20 17:09:18,740 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-20 17:09:21,496 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-20 17:09:31,871 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses shell-level background wrappers (nohup/disown/setsid). Use terminal(background=true) so Hermes can track the process, then run readine
+2026-06-20 17:09:34,124 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-20 17:09:43,022 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=28008 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-20 17:09:49,806 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:10:49.
+2026-06-20 17:09:49,902 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:10:49.
+2026-06-20 17:09:53,146 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-20 17:16:35,675 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-20 17:17:37,162 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:18:37.
+2026-06-20 17:17:37,481 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:18:37.
+2026-06-20 17:20:25,405 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool patch returned error (0.00s): {"error": "Refusing to write to Hermes config file: /home/ubuntu/.hermes/config.yaml\nAgent cannot modify security-sensitive configuration. Edit ~/.hermes/config.yaml directly or use 'hermes config' i
+2026-06-20 17:20:44,590 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool execute_code returned error (0.21s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/tmp/hermes_sandbox_vs7lt4fd/script.py\", line 10, in <module>\n    config = yaml.safe_load(content)\n    
+2026-06-20 17:20:49,134 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool execute_code returned error (0.06s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/tmp/hermes_sandbox_keczwngp/script.py\", line 4, in <module>\n    content = result[\"content\"]\n        
+2026-06-20 17:21:06,755 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-20 17:21:15,828 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=28008 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-20 17:21:26,025 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:22:26.
+2026-06-20 17:21:26,056 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:22:26.
+2026-06-20 17:21:28,555 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-20 17:21:37,166 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:22:37.
+2026-06-20 17:21:37,344 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 17:22:37.
+2026-06-20 17:30:54,834 WARNING [20260620_172135_7e7413ad] agent.tool_executor: Tool browser_navigate returned error (0.35s): {"success": false, "error": "Chrome not found. Checked:\n  - agent-browser cache: /home/ubuntu/.agent-browser/browsers\n  - System Chrome installations\n  - Puppeteer browser cache\n  - Playwright bro
+2026-06-20 18:06:33,332 WARNING [20260620_172135_7e7413ad] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:07:33.
+2026-06-20 18:06:33,419 WARNING [20260620_172135_7e7413ad] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:07:33.
+2026-06-20 18:06:36,523 WARNING [20260620_174415_eeaa3eb5] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'view'. Use: add, replace, remove", "success": false}
+2026-06-20 19:53:19,774 WARNING agent.lsp.servers: bash-language-server: shellcheck not found on PATH — diagnostics will be empty until shellcheck is installed (apt: shellcheck, brew: shellcheck, scoop: shellcheck).
+2026-06-20 19:53:34,016 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 19:54:34.
+2026-06-20 19:53:34,106 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 19:54:34.
+2026-06-20 19:59:05,122 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (2.75s): {"output": "API Key: \n---\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/
+2026-06-20 19:59:07,639 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "cat: /home/ubuntu/.config/syncthing/config.xml: No such file or directory", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-20 19:59:13,339 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (3.25s): {"output": "ls: cannot access '/home/ubuntu/.config/syncthing/': No such file or directory", "exit_code": 2, "error": null}
+
+[Tool loop warning: same_tool_failure_warning; count=3; terminal has failed
+2026-06-20 19:59:22,022 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.10s): {"output": "cert.pem\nconfig.xml\nconfig.xml.v0\nhttps-cert.pem\nhttps-key.pem\nindex-v0.14.0.db\nkey.pem\n---API KEY---", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an
+2026-06-20 19:59:30,236 WARNING [20260620_161802_2bdc6907] agent.conversation_loop: Corrupted tool_call arguments repaired before request (session=20260620_161802_2bdc6907, message_index=184, tool_call_id=call_00_4GHC5drRZ05g8BMAkxSE5473, function=terminal, preview='{"command": "APIKEY=*** Get device ID\\ncurl -s -H \\"X-API-Key: $APIKEY')
+2026-06-20 19:59:38,071 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool execute_code returned error (0.21s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/tmp/hermes_sandbox_neyq4o6v/script.py\", line 27, in <module>\n    \"devices\": [{\"deviceID\": config[\"
+2026-06-20 19:59:54,045 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (11.20s): {"output": "Device: PE7IUSA-BHA3PXI-QVLICNW-J4RMA56-RGYNKKQ-55OXTV4-B7Y5EH3-NGU2DQH\nMethod Not Allowed\n---\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/ho
+2026-06-20 20:00:02,746 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool patch returned error (0.03s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n   1| import json, urllib.request, urllib.error\n   2| \n   3| API_KEY=***
+2026-06-20 20:00:02,749 WARNING [20260620_161802_2bdc6907] agent.conversation_loop: Corrupted tool_call arguments repaired before request (session=20260620_161802_2bdc6907, message_index=194, tool_call_id=call_00_hARmJwYs5kgGbSlunK4D6875, function=patch, preview='{"new_string": "API_KEY=*** "old_string": "API_KEY=*** "path": "/tmp/s')
+2026-06-20 20:00:05,355 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "Device ID: PE7IUSA-BHA3PXI-QVLICNW-J4RMA56-RGYNKKQ-55OXTV4-B7Y5EH3-NGU2DQH\nCurrent folders: ['default']\nTraceback (most recent call last):\n  File \"/tmp/st_add_folder.py\", line 45, in 
+2026-06-20 20:05:24,602 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (300.24s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command timed out without user response. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt
+2026-06-20 20:07:20,782 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+2026-06-20 20:07:30,810 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-20 20:10:12,108 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.14s): {"output": "/usr/bin/bash: line 25: import: command not found\n/usr/bin/bash: eval: line 26: syntax error near unexpected token `('\n/usr/bin/bash: eval: line 26: `r=json.load(sys.stdin)'", "exit_code
+2026-06-20 20:10:23,685 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.28s): {"output": "remote added\nfatal: could not read Username for 'https://github.com': No such device or address", "exit_code": 128, "error": null}
+2026-06-20 20:10:27,281 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.36s): {"output": "remote updated\nremote: Invalid username or token. Password authentication is not supported for Git operations.\nfatal: Authentication failed for 'https://github.com/agassparkle/hermes-vau
+2026-06-20 20:10:30,770 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.37s): {"output": "remote: Invalid username or token. Password authentication is not supported for Git operations.\nfatal: Authentication failed for 'https://github.com/agassparkle/hermes-vault.git/'", "exit
+2026-06-20 20:10:55,107 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.13s): {"output": "/usr/bin/bash: eval: line 13: syntax error near unexpected token `('\n/usr/bin/bash: eval: line 13: `  -d \"{\\\"title\\\":\\\"hermes-server\\\",\\\"key\\\":\\\"$SSH_KEY\\\"}\" | python3 -
+2026-06-20 20:11:46,635 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "Operation 5 (replace): no entry matched 'Jack must be precise, consistent, never fabricate information'. No operations were applied (batch is all-or-nothing).", "current_e
+2026-06-20 20:12:52,926 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.33s): {"output": "error validating token: HTTP 401: Bad credentials (https://api.github.com/)\nTry authenticating with:  gh auth login -h github.com", "exit_code": 1, "error": null}
+2026-06-20 20:12:53,173 WARNING [bg_201243_81943d] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Access denied: /home/ubuntu/.env is a secret-bearing environment file and cannot be read to prevent credential leakage. If you need to check the file structure, read .env.example instead. (
+2026-06-20 20:13:02,036 WARNING [bg_201243_81943d] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "===", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-20 20:13:03,911 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.28s): {"output": "fatal: could not read Username for 'https://github.com': No such device or address", "exit_code": 128, "error": null}
+2026-06-20 20:13:05,570 WARNING [bg_201243_81943d] agent.tool_executor: Tool terminal returned error (0.33s): {"output": "===\n===", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-20 20:13:07,262 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.45s): {"output": "---\nremote: Write access to repository not granted.\nfatal: unable to access 'https://github.com/agassparkle/hermes-vault.git/': The requested URL returned error: 403", "exit_code": 128, 
+2026-06-20 20:13:15,340 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (1.29s): {"output": "[]---\nGraphQL: Could not resolve to a Repository with the name 'agassparkle/hermes-vault'. (repository)\n---\nUser: agassparkle\n---\nTraceback (most recent call last):\n  File \"<string>
+2026-06-20 20:13:26,747 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.46s): {"output": "GraphQL: Name already exists on this account (createRepository)", "exit_code": 1, "error": null}
+2026-06-20 20:13:30,537 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "/usr/bin/bash: line 5: cd: /home/ubuntu/vault: No such file or directory", "exit_code": 1, "error": null, "exit_code_meaning": "Non-zero exit (often normal — e.g. 'git diff' returns 1 when
+2026-06-20 20:14:16,007 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (3.30s): {"output": "inactive", "exit_code": 3, "error": null}
+2026-06-20 20:14:27,150 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (1.85s): {"output": "gh: Not Found (HTTP 404)\ndelete sent\nGraphQL: Name already exists on this account (createRepository)", "exit_code": 1, "error": null}
+2026-06-20 20:14:30,828 WARNING [20260620_161802_2bdc6907] agent.tool_executor: Tool terminal returned error (0.49s): {"output": "remote: Write access to repository not granted.\nfatal: unable to access 'https://github.com/agassparkle/hermes-vault.git/': The requested URL returned error: 403", "exit_code": 128, "erro
+2026-06-20 20:26:36,700 WARNING [20260620_161802_2bdc6907] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:27:36.
+2026-06-20 20:26:37,324 WARNING [20260620_161802_2bdc6907] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:27:37.
+2026-06-20 20:27:53,083 WARNING [20260620_161802_2bdc6907] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:28:53.
+2026-06-20 20:27:53,114 WARNING [20260620_161802_2bdc6907] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:28:53.
+2026-06-21 09:38:08,429 WARNING [20260620_202742_1d11b037] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:39:08.
+2026-06-21 09:38:08,550 WARNING [20260620_202742_1d11b037] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:39:08.
+2026-06-21 12:00:31,432 WARNING [20260620_174415_eeaa3eb5] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-21 12:00:34,456 WARNING [20260620_174415_eeaa3eb5] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-21 12:00:37,780 WARNING [20260620_174415_eeaa3eb5] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": 1, "error": "Blocked: cannot restart or stop the gateway from inside the gateway process. The gateway would kill this command before it could complete (SIGTERM propagates t
+2026-06-21 12:00:37,788 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 30.0s: Flood control exceeded. Retry in 30 seconds
+2026-06-21 12:00:41,370 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 26.0s: Flood control exceeded. Retry in 26 seconds
+2026-06-21 12:00:47,503 WARNING gateway.platforms.telegram: [Telegram] sendRichMessage transient failure (no legacy resend): Flood control exceeded. Retry in 20 seconds
+2026-06-21 12:00:47,504 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 1/2, retrying in 2.4s): Flood control exceeded. Retry in 20 seconds
+2026-06-21 12:00:49,964 WARNING gateway.platforms.telegram: [Telegram] sendRichMessage transient failure (no legacy resend): Flood control exceeded. Retry in 18 seconds
+2026-06-21 12:00:49,964 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 2/2, retrying in 4.2s): Flood control exceeded. Retry in 18 seconds
+2026-06-21 12:00:54,236 WARNING gateway.platforms.telegram: [Telegram] sendRichMessage transient failure (no legacy resend): Flood control exceeded. Retry in 13 seconds
+2026-06-21 12:00:54,237 ERROR gateway.platforms.base: [Telegram] Failed to deliver response after 2 retries: Flood control exceeded. Retry in 13 seconds
+2026-06-21 12:00:54,259 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 13.0s: Flood control exceeded. Retry in 13 seconds
+2026-06-21 12:30:14,468 WARNING [20260620_161802_2bdc6907] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:31:14.
+2026-06-21 12:30:14,565 WARNING [20260620_161802_2bdc6907] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:31:14.
+2026-06-21 13:22:50,502 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-21 13:23:35,411 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:24:35.
+2026-06-21 13:23:35,597 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:24:35.
+2026-06-21 17:32:14,653 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool browser_navigate returned error (0.21s): {"success": false, "error": "Chrome not found. Checked:\n  - agent-browser cache: /home/ubuntu/.agent-browser/browsers\n  - System Chrome installations\n  - Puppeteer browser cache\n  - Playwright bro
+2026-06-21 17:37:44,763 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (300.27s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command timed out without user response. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt
+2026-06-21 17:42:46,261 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (300.50s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command timed out without user response. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt
+2026-06-21 17:47:47,512 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (300.25s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command timed out without user response. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt
+2026-06-21 17:53:19,200 WARNING [20260621_171840_fb304728] tools.code_execution_tool: execute_code timed out after 300.02s (limit 300s) with 0 tool calls
+2026-06-21 17:53:19,202 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool execute_code returned error (300.06s): {"status": "timeout", "output": "⏰ Script timed out after 300s and was killed.", "tool_calls_made": 0, "duration_seconds": 300.02, "error": "Script timed out after 300s and was killed."}
+2026-06-21 17:53:52,272 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (0.50s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-21 17:53:53,962 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (0.69s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-21 17:57:01,643 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 133.0s
+2026-06-21 17:57:01,728 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 133.0s
+2026-06-21 17:57:01,813 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 133.0s
+2026-06-21 17:57:01,870 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 133.0s
+2026-06-21 18:00:53,121 WARNING cron.scheduler: Job '228e7dfe4d17': configured workdir '/home/ubuntu/vault' no longer exists — running without it
+2026-06-21 18:00:55,493 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:01:55.
+2026-06-21 18:00:55,580 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:01:55.
+2026-06-21 18:00:59,061 WARNING [cron_228e7dfe4d17_20260621_180053] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "bash: /home/ubuntu/vault/auto-commit.sh: No such file or directory", "exit_code": 127, "error": null}
+2026-06-21 18:02:35,242 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-21 18:07:18,691 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "A skill named 'poe2-build-design' already exists at /home/ubuntu/.hermes/skills/gaming/poe2-build-design."}
+2026-06-21 18:14:57,330 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (0.16s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/skills_raw.json'", "exit_code": 1, "error": null
+2026-06-21 18:15:58,251 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-21 18:16:06,318 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "-rw-rw-r-- 1 ubuntu ubuntu 1382297 Jun 21 17:47 /tmp/support_gems.html", "exit_code": 2, "error": null}
+2026-06-21 18:17:35,107 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "A skill named 'poe2-build-design' already exists at /home/ubuntu/.hermes/skills/gaming/poe2-build-design."}
+2026-06-21 18:36:29,141 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-21 18:51:07,474 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-21 18:51:42,533 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-21 18:53:34,439 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool skill_manage returned error (0.25s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n   1| # Flicker Strike Power Charge Engine\n   2| \n   3| Discovered June 2026 du
+2026-06-21 18:53:48,950 WARNING [20260621_171840_fb304728] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "SKILL.md must start with YAML frontmatter (---). See existing skills for format."}
+2026-06-21 19:03:04,774 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "A skill named 'poe2-build-design' already exists at /home/ubuntu/.hermes/skills/gaming/poe2-build-design."}
+2026-06-21 19:03:45,080 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool skill_manage returned error (0.00s): {"error": "file_content is required for 'write_file'.", "success": false}
+2026-06-21 19:21:20,082 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.70s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 3, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/json/__init__.py
+2026-06-21 19:21:24,383 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.51s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 5, in <module>\nTypeError: 'NoneType' object is not subscriptable\n  NeverSinkDev/NeverSink-Filter-for-PoE2 ⭐2835  This is a l
+2026-06-21 19:21:30,825 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (1.70s): {"output": "HTTP/2 200 \r\ndate: Sun, 21 Jun 2026 19:21:29 GMT\r\ncontent-type: text/html; charset=utf-8\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Sec-Fetch-Site,A
+2026-06-21 19:22:38,657 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 10, in <module>\nTypeError: 'set' object is not subscriptable", "exit_code": 1, "error": null}
+2026-06-21 19:24:40,686 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 19:25:40.
+2026-06-21 19:24:40,777 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 19:25:40.
+2026-06-21 19:25:26,914 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool skill_manage returned error (0.00s): {"error": "file_content is required for 'write_file'.", "success": false}
+2026-06-21 19:27:34,274 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.15s): {"output": "=== POE2-ONLY MARKERS IN DATA ===\n30\n\n=== Flicker Strike charge type ===\n\n=== PoE2-exclusive skills in this file ===\n19\n\n=== PoE2 Spirit gems (don't exist in PoE1) ===\n9\n\n=== Po
+2026-06-21 19:43:50,611 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 19:44:50.
+2026-06-21 19:43:50,697 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 19:44:50.
+2026-06-21 19:50:15,916 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 14, in <module>\nAttributeError: 'list' object has no attribute 'items'\nMonk: {'ascendancies': [{'background': {'height': 150
+2026-06-21 19:50:19,889 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.22s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 15, in <module>\nAttributeError: 'list' object has no attribute 'values'\nNodes type: <class 'dict'>, len: 4914\nGroups type: 
+2026-06-21 19:50:39,017 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.23s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 16, in <module>\nAttributeError: 'NoneType' object has no attribute 'get'", "exit_code": 1, "error": null}
+2026-06-21 19:50:43,644 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.19s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 17, in <module>\nAttributeError: 'NoneType' object has no attribute 'get'", "exit_code": 1, "error": null}
+2026-06-21 19:52:39,639 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.19s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 24, in <module>\nValueError: too many values to unpack (expected 2)", "exit_code": 1, "error": null}
+2026-06-21 19:54:28,194 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool skill_manage returned error (0.94s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-21 19:54:31,164 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-21 20:32:40,850 WARNING [20260621_185505_26b9e0] agent.tool_executor: Tool terminal returned error (0.15s): {"output": "/usr/bin/bash: eval: line 29: unexpected EOF while looking for matching `\"'", "exit_code": 2, "error": null}
+2026-06-21 20:36:20,827 WARNING [20260621_203337_639c62] agent.tool_executor: Tool terminal returned error (0.13s): {"output": "/tmp/PathOfBuilding-PoE2/manifest.xml\n===", "exit_code": 1, "error": null}
+2026-06-21 20:37:21,553 WARNING [20260621_203337_639c62] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Found 2 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "file_preview": "---\nname: poe2-build-design\ndescription: Design origi
+2026-06-21 20:37:25,829 WARNING [20260621_203337_639c62] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Unknown action ''. Use: create, edit, patch, delete, write_file, remove_file"}
+2026-06-21 20:56:47,185 WARNING [20260621_205442_fa6c65] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Found 2 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "file_preview": "---\nname: poe2-build-design\ndescription: Design origi
+2026-06-21 20:56:52,381 WARNING [20260621_205442_fa6c65] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Found 2 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "file_preview": "---\nname: poe2-build-design\ndescription: Design origi
+2026-06-21 20:56:57,316 WARNING [20260621_205442_fa6c65] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Found 2 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "file_preview": "---\nname: poe2-build-design\ndescription: Design origi
+2026-06-21 21:31:04,687 WARNING [20260621_211816_1372a3] agent.tool_executor: Tool terminal returned error (0.14s): {"output": "AGENTS.md\nArchive\nAreas\nDirectory\nInbox\nJournal\nProjects\nResources\nWiki\nauto-commit.sh\nindex.md\n---", "exit_code": 2, "error": null}
+2026-06-21 21:31:42,070 WARNING [20260621_211816_1372a3] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+2026-06-21 22:08:50,241 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 9.0s
+2026-06-21 22:08:50,316 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 9.0s
+2026-06-21 22:08:50,393 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 9.0s
+2026-06-21 22:08:50,421 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 9.0s
+2026-06-21 22:34:20,276 WARNING [20260621_211816_1372a3] agent.tool_executor: Tool browser_navigate returned error (1.83s): {"success": false, "error": "Chrome not found. Checked:\n  - agent-browser cache: /home/ubuntu/.agent-browser/browsers\n  - System Chrome installations\n  - Puppeteer browser cache\n  - Playwright bro
+2026-06-21 22:35:25,477 WARNING [20260621_211816_1372a3] agent.tool_executor: Tool terminal returned error (60.28s): {"output": "[Command timed out after 60s]", "exit_code": 124, "error": null}
+2026-06-21 22:35:41,120 WARNING [20260621_211816_1372a3] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-21 22:36:32,367 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:37:32.
+2026-06-21 22:36:32,476 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:37:32.
+2026-06-21 22:37:03,159 WARNING [20260621_211816_1372a3] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Found 2 matches for old_string. Provide more context to make it unique, or use replace_all=True.", "file_preview": "---\nname: poe2-build-design\ndescription: Design origi
+2026-06-21 22:46:45,968 WARNING [20260621_211816_1372a3] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:47:45.
+2026-06-21 22:46:46,039 WARNING [20260621_211816_1372a3] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:47:46.
+2026-06-21 23:03:08,872 WARNING [20260621_225405_95ca6b] agent.tool_executor: Tool terminal returned error (20.36s): {"output": "Gothic QStaff with phys%: 431\n\n[Command timed out after 20s]", "exit_code": 124, "error": null}
+2026-06-21 23:03:35,832 WARNING [20260621_225405_95ca6b] agent.tool_executor: Tool terminal returned error (20.36s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/json/__init__.py\
+2026-06-21 23:09:32,501 WARNING [20260621_225405_95ca6b] agent.tool_executor: Tool memory returned error (0.00s): {"error": "content is required for 'replace' action.", "success": false}
+2026-06-21 23:43:40,283 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-21 23:43:41,287 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-21 23:46:55,284 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nzlib.error: Error -3 while decompressing data: incorrect header check", "exit_code": 1, "error": null}
+2026-06-21 23:47:56,741 ERROR gateway.platforms.telegram: [Telegram] Overflow split: first-chunk edit failed: Flood control exceeded. Retry in 153 seconds
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/gateway/platforms/telegram.py", line 2925, in _edit_overflow_split
+    await self._bot.edit_message_text(
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 1732, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 4543, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 629, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 819, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 351, in _request_wrapper
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 153 seconds
+2026-06-21 23:47:56,882 ERROR gateway.platforms.telegram: [Telegram] Overflow split: first-chunk edit failed: Flood control exceeded. Retry in 153 seconds
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/gateway/platforms/telegram.py", line 2925, in _edit_overflow_split
+    await self._bot.edit_message_text(
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 1732, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 4543, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 629, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 819, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 351, in _request_wrapper
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 153 seconds
+2026-06-21 23:47:56,994 ERROR gateway.platforms.telegram: [Telegram] Overflow split: first-chunk edit failed: Flood control exceeded. Retry in 153 seconds
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/gateway/platforms/telegram.py", line 2925, in _edit_overflow_split
+    await self._bot.edit_message_text(
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 1732, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 4543, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 629, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 819, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 351, in _request_wrapper
+    raise RetryAfter(retry_after)
+telegram.error.RetryAfter: Flood control exceeded. Retry in 153 seconds
+2026-06-21 23:48:30,507 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 119.0s: Flood control exceeded. Retry in 119 seconds
+2026-06-21 23:49:53,943 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool skill_manage returned error (1.49s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-21 23:49:56,614 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 00:08:05,616 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "", "exit_code": 1, "error": null}
+2026-06-22 08:06:04,648 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "", "exit_code": 1, "error": null}
+2026-06-22 08:10:13,132 ERROR [20260621_233738_84de6177] agent.conversation_loop: Outer loop error in API call #1
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/agent/conversation_loop.py", line 3972, in run_conversation
+    agent._execute_tool_calls(assistant_message, messages, effective_task_id, api_call_count)
+  File "/home/ubuntu/.hermes/hermes-agent/run_agent.py", line 5183, in _execute_tool_calls
+    return self._execute_tool_calls_sequential(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/run_agent.py", line 5265, in _execute_tool_calls_sequential
+    return execute_tool_calls_sequential(self, assistant_message, messages, effective_task_id, api_call_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/agent/tool_executor.py", line 1383, in execute_tool_calls_sequential
+    subdir_hints = agent._subdirectory_hints.check_tool_call(function_name, function_args)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 85, in check_tool_call
+    dirs = self._extract_directories(tool_name, tool_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 116, in _extract_directories
+    self._extract_paths_from_command(cmd, candidates)
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 167, in _extract_paths_from_command
+    self._add_path_candidate(token, candidates)
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 130, in _add_path_candidate
+    p = Path(raw_path).expanduser()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/pathlib.py", line 1385, in expanduser
+    raise RuntimeError("Could not determine home directory.")
+RuntimeError: Could not determine home directory.
+2026-06-22 08:11:27,176 WARNING [20260621_233738_84de6177] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-22 08:23:58,571 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool terminal returned error (0.51s): {"output": "1. Vengeance Pillar ilvl18 | 1 transmute | DPS:?\n   42% increased [Physical] Damage\n   Adds 10 to 20 [Physical|Physical] Damage\n   Adds 1 to 32 [Lightning|Lightning] Damage\n   +2 to Le
+2026-06-22 08:31:17,820 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool terminal returned error (0.52s): {"output": "1. The Sentry ilvl58 | 10 divine | DPS:?\n   [stat.explicit.stat_1509134228] No [Physical] Damage\n   [stat.explicit.stat_709508406] Adds 25 to 47 [Fire|Fire] Damage\n\n2. The Sentry ilvl7
+2026-06-22 08:31:59,326 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-22 08:33:22,812 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool terminal returned error (0.52s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\nKeyError: 'result'\n0 results", "exit_code": 1, "error": null}
+2026-06-22 08:37:51,384 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  64| ```\n  65| \n  66| **Response:**\n  67| ```json\n  68| {\n---\n 122| **CRIT
+2026-06-22 11:29:49,376 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 11:30:49.
+2026-06-22 12:06:19,946 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:07:19.
+2026-06-22 12:14:15,846 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 12:15:15.
+2026-06-22 12:26:24,138 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool terminal returned error (0.22s): {"output": "File \"<stdin>\", line 12\n    code = base64.b64encode(zlib.compress(data, 9)).decode().replace('+', '-', replace('/', '_').rstrip('=')\n                                                   
+2026-06-22 12:57:24,811 WARNING [20260622_082324_5368ba] tools.browser_tool: browser 'open' timed out after 60s (task=20260622_082324_5368ba, socket_dir=/tmp/agent-browser-h_502e2fa83d)
+2026-06-22 12:57:24,812 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool browser_navigate returned error (61.79s): {"success": false, "error": "Command timed out after 60 seconds"}
+2026-06-22 12:59:00,608 WARNING [20260622_082324_5368ba] tools.browser_tool: browser 'close' timed out after 10s (task=20260622_082324_5368ba, socket_dir=/tmp/agent-browser-h_502e2fa83d)
+2026-06-22 12:59:42,443 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 12:59:47,018 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 13:00:11,597 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  46|               classInternalId=\"Monk\" ascendancyInternalId=\"Monk1\"\n  47
+2026-06-22 13:00:37,591 WARNING [20260622_082324_5368ba] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Unknown action ''. Use: create, edit, patch, delete, write_file, remove_file"}
+2026-06-22 13:07:42,048 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:08:42.
+2026-06-22 13:11:35,908 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:12:35.
+2026-06-22 13:15:50,985 WARNING [20260622_130912_621aa6] tools.browser_tool: browser 'open' timed out after 60s (task=20260622_130912_621aa6, socket_dir=/tmp/agent-browser-h_3ea25d8f11)
+2026-06-22 13:15:50,986 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool browser_navigate returned error (60.01s): {"success": false, "error": "Command timed out after 60 seconds"}
+2026-06-22 13:16:36,735 WARNING [20260622_130912_621aa6] tools.browser_tool: browser 'close' timed out after 10s (task=20260622_130912_621aa6, socket_dir=/tmp/agent-browser-h_3ea25d8f11)
+2026-06-22 13:17:13,884 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool patch returned error (0.00s): {"error": "Background review denied non-whitelisted tool: patch. Only memory/skill tools are allowed."}
+2026-06-22 13:17:38,903 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Unknown action ''. Use: create, edit, patch, delete, write_file, remove_file"}
+2026-06-22 13:17:51,488 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool skill_manage returned error (1.41s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 13:17:55,298 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 13:25:29,650 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:26:29.
+2026-06-22 13:27:35,219 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool skill_manage returned error (0.22s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 13:27:38,532 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 13:35:04,051 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:36:04.
+2026-06-22 13:37:26,761 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nzlib.error: Error -3 while decompressing data: invalid distance too far back", "exit_code": 1, "error": null}
+2026-06-22 13:37:42,574 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool terminal returned error (0.19s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-22 13:38:30,616 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nzlib.error: Error -3 while decompressing data: invalid distance too far back", "exit_code": 1, "error": null}
+2026-06-22 13:39:11,940 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nzlib.error: Error -3 while decompressing data: invalid stored block lengths", "exit_code": 1, "error": null}
+2026-06-22 13:41:13,998 WARNING agent.message_sanitization: Unrepairable tool_call arguments for terminal — replaced with empty object (was: {"command": "python3 << 'PYEOF'\nimport)
+2026-06-22 13:41:13,998 WARNING agent.chat_completion_helpers: Stream ended with no finish_reason while a tool call's arguments were still incomplete (tools=['terminal']); treating as a mid-tool-call stream drop, not an output-length truncation.
+2026-06-22 13:42:38,042 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 8, in <module>\nzlib.error: Error -3 while decompressing data: invalid stored block lengths\nDecoded 2475 bytes, first bytes: 
+2026-06-22 13:48:53,375 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool terminal returned error (0.16s): {"output": "Decoded 2923 bytes, hex: 78daad1a\nTraceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nzlib.error: Error -3 while decompressing data: invalid stored block lengths"
+2026-06-22 13:50:17,671 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:51:17.
+2026-06-22 13:56:28,575 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 13:57:28.
+2026-06-22 13:57:28,918 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+2026-06-22 13:57:51,037 WARNING [20260622_130912_621aa6] agent.tool_executor: Tool skill_manage returned error (0.60s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 14:03:06,181 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool terminal returned error (0.14s): {"output": "/usr/bin/bash: line 3: file: command not found", "exit_code": 127, "error": null}
+2026-06-22 14:08:18,908 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool terminal returned error (0.19s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAttributeError: 'list' object has no attribute 'get'", "exit_code": 1, "error": null}
+2026-06-22 14:08:25,125 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool terminal returned error (0.23s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nAttributeError: 'list' object has no attribute 'get'", "exit_code": 1, "error": null}
+2026-06-22 14:11:25,331 ERROR [20260622_140300_b96c61] agent.conversation_loop: Outer loop error in API call #4
+Traceback (most recent call last):
+  File "/home/ubuntu/.hermes/hermes-agent/agent/conversation_loop.py", line 3972, in run_conversation
+    agent._execute_tool_calls(assistant_message, messages, effective_task_id, api_call_count)
+  File "/home/ubuntu/.hermes/hermes-agent/run_agent.py", line 5183, in _execute_tool_calls
+    return self._execute_tool_calls_sequential(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/run_agent.py", line 5265, in _execute_tool_calls_sequential
+    return execute_tool_calls_sequential(self, assistant_message, messages, effective_task_id, api_call_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/agent/tool_executor.py", line 1383, in execute_tool_calls_sequential
+    subdir_hints = agent._subdirectory_hints.check_tool_call(function_name, function_args)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 85, in check_tool_call
+    dirs = self._extract_directories(tool_name, tool_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 116, in _extract_directories
+    self._extract_paths_from_command(cmd, candidates)
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 167, in _extract_paths_from_command
+    self._add_path_candidate(token, candidates)
+  File "/home/ubuntu/.hermes/hermes-agent/agent/subdirectory_hints.py", line 130, in _add_path_candidate
+    p = Path(raw_path).expanduser()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/pathlib.py", line 1385, in expanduser
+    raise RuntimeError("Could not determine home directory.")
+RuntimeError: Could not determine home directory.
+2026-06-22 14:13:09,663 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool skill_manage returned error (0.66s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 14:13:16,821 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 14:13:54,353 WARNING [20260622_140300_b96c61] agent.conversation_loop: Turn ended with pending tool result (agent may appear stuck). Turn ended: reason=fallback_prior_turn_content model=deepseek-v4-pro api_calls=11/16 budget=11/16 tool_turns=90 last_msg_role=tool response_len=49 session=20260622_140300_b96c61 last_tool=skill_manage
+2026-06-22 15:18:55,797 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool skill_manage returned error (0.34s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 15:19:01,965 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 15:28:04,679 WARNING [20260622_140300_b96c61] tools.browser_tool: browser 'open' timed out after 60s (task=20260622_140300_b96c61, socket_dir=/tmp/agent-browser-h_1135644aa2)
+2026-06-22 15:28:04,680 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool browser_navigate returned error (61.30s): {"success": false, "error": "Command timed out after 60 seconds"}
+2026-06-22 15:28:38,666 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>^M$\n<PathOfBuilding2>^M$\n^I<Build viewMode=\"TREE\" ascendClassName=\"Witchhunter\" className=\"Mercenary\" mainSocketGroup=\"1\" targetVersion=
+2026-06-22 15:28:44,484 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/base64.py\", line
+2026-06-22 15:29:32,662 WARNING tools.browser_tool: browser 'close' timed out after 10s (task=20260622_140300_b96c61, socket_dir=/tmp/agent-browser-h_1135644aa2)
+2026-06-22 15:30:31,827 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 15:30:35,326 WARNING [20260622_140300_b96c61] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 15:46:57,525 WARNING [20260622_153253_4defec] tools.browser_tool: browser 'open' timed out after 60s (task=20260622_153253_4defec, socket_dir=/tmp/agent-browser-h_c0eb4bed54)
+2026-06-22 15:46:57,526 WARNING [20260622_153253_4defec] agent.tool_executor: Tool browser_navigate returned error (61.29s): {"success": false, "error": "Command timed out after 60 seconds"}
+2026-06-22 15:47:27,673 WARNING [20260622_153253_4defec] tools.browser_tool: browser 'close' timed out after 10s (task=20260622_153253_4defec, socket_dir=/tmp/agent-browser-h_c0eb4bed54)
+2026-06-22 16:35:12,548 WARNING [20260622_153253_4defec] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+2026-06-22 17:45:46,453 WARNING [20260622_164002_e92e85] agent.tool_executor: Tool terminal returned error (0.13s): {"output": "node:internal/modules/cjs/loader:1433\n  throw err;\n  ^\n\nError: Cannot find module 'puppeteer-core'\nRequire stack:\n- /tmp/scrape.js\n    at Function._resolveFilename (node:internal/mo
+2026-06-22 18:00:56,160 WARNING cron.scheduler: Job '228e7dfe4d17': configured workdir '/home/ubuntu/vault' no longer exists — running without it
+2026-06-22 18:00:58,526 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:01:58.
+2026-06-22 18:00:58,614 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 18:01:58.
+2026-06-22 18:03:58,964 WARNING [cron_228e7dfe4d17_20260622_180056] agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=deepseek-v4-pro context=~15,575 tokens. Killing connection.
+2026-06-22 18:03:58,979 WARNING [cron_228e7dfe4d17_20260622_180056] agent.conversation_loop: API call failed (attempt 1/3) error_type=ReadError thread=ThreadPoolExecutor-12_0:262456853066144 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro summary=[Errno 32] Broken pipe
+2026-06-22 18:03:58,979 WARNING [cron_228e7dfe4d17_20260622_180056] agent.conversation_loop: Retrying API call in 2.040892052808818s (attempt 1/3) thread=ThreadPoolExecutor-12_0:262456853066144 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro error=[Errno 32] Broken pipe
+2026-06-22 18:04:05,009 WARNING [cron_228e7dfe4d17_20260622_180056] agent.tool_executor: Tool terminal returned error (0.14s): {"output": "bash: /home/ubuntu/vault/auto-commit.sh: No such file or directory", "exit_code": 127, "error": null}
+2026-06-22 18:07:07,185 WARNING [cron_228e7dfe4d17_20260622_180056] agent.chat_completion_helpers: Stream stale for 180s (threshold 180s) — no chunks received. model=deepseek-v4-pro context=~15,723 tokens. Killing connection.
+2026-06-22 18:07:07,197 WARNING [cron_228e7dfe4d17_20260622_180056] agent.conversation_loop: API call failed (attempt 1/3) error_type=ReadError thread=ThreadPoolExecutor-12_0:262456853066144 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro summary=[Errno 32] Broken pipe
+2026-06-22 18:07:07,198 WARNING [cron_228e7dfe4d17_20260622_180056] agent.conversation_loop: Retrying API call in 2.8876089267775287s (attempt 1/3) thread=ThreadPoolExecutor-12_0:262456853066144 provider=deepseek base_url=https://api.deepseek.com model=deepseek-v4-pro error=[Errno 32] Broken pipe
+2026-06-22 18:07:20,502 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-22 18:33:24,687 WARNING [20260622_183028_4cb5d7] agent.tool_executor: Tool terminal returned error (0.70s): {"output": "POB codes in HTML: 0\n\n\n=== Downloading poe.ninja passive tree data ===\nTraceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"/home/ubuntu/.local/share/
+2026-06-22 18:34:21,231 WARNING [20260622_183028_4cb5d7] agent.tool_executor: Tool terminal returned error (21.90s): {"output": "PoE2 API endpoints:\n  'build': t{c as Q,j as N}from\"./a.C0bj0O9i.mjs\";import{a as X}from\"./a.CrWS-F2N.mjs\";import{u as Z}from\"./a.W\n  'pob': F=2,c=w[1],R=w[2],d=\"\"),c.endsWith(\")
+2026-06-22 18:34:59,957 WARNING [20260622_183028_4cb5d7] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 18:35:03,522 WARNING [20260622_183028_4cb5d7] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 18:39:06,766 WARNING [20260622_183757_99d3e5] agent.tool_executor: Tool terminal returned error (0.37s): {"output": "Build hashes/IDs: 0\nTraceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nTypeError: 'set' object is not subscriptable", "exit_code": 1, "error": null}
+2026-06-22 18:39:44,978 WARNING [20260622_183757_99d3e5] agent.tool_executor: Tool terminal returned error (0.51s): {"output": "Status: 200, Length: 52526\nTraceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib
+2026-06-22 18:49:05,742 WARNING [20260622_183757_99d3e5] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\nzlib.error: Error -3 while decompressing data: invalid distance too far back", "exit_code": 1, "error": null}
+2026-06-22 18:49:10,744 WARNING [20260622_183757_99d3e5] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nzlib.error: Error -3 while decompressing data: invalid stored block lengths", "exit_code": 1, "error": null}
+2026-06-22 18:50:16,944 WARNING [20260622_183757_99d3e5] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+2026-06-22 19:12:25,507 WARNING [20260622_191152_aa9323] agent.tool_executor: Tool terminal returned error (0.13s): {"output": "Traceback (most recent call last):\n  File \"/tmp/gen_final_v3.py\", line 63, in <module>\n    \\t{config_section.group()}\n       ^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object h
+2026-06-22 19:12:58,007 WARNING [20260622_191152_aa9323] agent.tool_executor: Tool terminal returned error (0.13s): {"output": "Traceback (most recent call last):\n  File \"/tmp/gen_final_v3.py\", line 9, in <module>\n    config = re.search(r'<Config>.*?</Config>', template, re.DOTALL).group()\n             ^^^^^^^
+2026-06-22 19:20:34,300 WARNING [20260622_191152_aa9323] agent.tool_executor: Tool skill_manage returned error (0.00s): {"error": "file_content is required for 'write_file'.", "success": false}
+2026-06-22 19:37:14,560 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool skill_manage returned error (0.32s): {"success": false, "error": "Escape-drift detected: old_string and new_string contain the literal sequence '\\\\\"' but the matched region of the file does not. This is almost always a tool-call seria
+2026-06-22 19:39:39,635 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-22 19:40:35,943 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 8, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/base64.py\", lin
+2026-06-22 19:40:40,389 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 12, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/base64.py\", li
+2026-06-22 19:40:47,974 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "Traceback (most recent call last):\n  File \"<string>\", line 13, in <module>\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/base64.py\", li
+2026-06-22 19:43:41,370 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool skill_manage returned error (0.24s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 519| Save output as `.txt` single-line file. **Deliver via `MEDIA:/path` on Tele
+2026-06-22 19:43:45,155 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool skill_manage returned error (0.24s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 519| Save output as `.txt` single-line file. **Deliver via `MEDIA:/path` on Tele
+2026-06-22 19:43:47,492 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-22 19:48:53,229 WARNING [20260622_192604_eb2d0d] agent.tool_executor: Tool skill_manage returned error (1.08s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 343| 2. **Obsidian vault**: `~/jack-vault/Projects/`, `Resources/`, or `Wiki/` b
+2026-06-22 20:15:30,434 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool execute_code returned error (0.00s): {"status": "error", "error": "BLOCKED: execute_code runs arbitrary local Python (including subprocess calls that bypass shell-string approval checks). Cron jobs run without a user present to approve i
+2026-06-22 20:47:43,468 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:48:43.
+2026-06-22 20:52:15,800 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "Template: 41947 chars\nOld Spec tag: <Spec ascendancyInternalId=\"Monk1\" ascendClassId=\"1\" classInternalId=\"10\" masteryEffects=\"\" secondaryAscendClassId=\"nil\" nodes=\"11495,26572,
+2026-06-22 20:53:22,925 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 20:54:22.
+2026-06-22 20:56:30,504 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "After applying all 2 operations, memory would be at 5,099/4,400 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
+2026-06-22 21:25:53,493 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool terminal returned error (0.00s): {"output": "", "exit_code": -1, "error": "Foreground command uses '&' backgrounding. Use terminal(background=true) for long-lived processes, then run health checks and tests in follow-up terminal call
+2026-06-22 21:27:07,739 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "No entry matched 'POB Community PoE2 v0.21.0 (user's installed version) has DIFFERENT tree data than the dev repo at /tmp/PathOfBuilding-PoE2. Node IDs, class integerIds, 
+2026-06-22 22:06:32,429 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "File \"<stdin>\", line 62\n    ls_amu = re.sub(r'id=\"11\"', f'id=\"{re.search(r\"itemId=\\\"(\\d+)\\\"\", s).group(1)}\"', ls_amu)\n                                                       
+2026-06-22 22:06:58,546 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "After applying all 3 operations, memory would be at 4,673/4,400 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
+2026-06-22 22:10:39,899 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool skill_manage returned error (0.73s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n 784| 2. **Connectivity check**: Run `scripts/verify-pob-connectivity.py <node_cs
+2026-06-22 22:10:42,762 WARNING [20260622_195428_8e10ea1e] agent.tool_executor: Tool search_files returned error (0.00s): {"error": "Background review denied non-whitelisted tool: search_files. Only memory/skill tools are allowed."}
+2026-06-23 09:29:50,380 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-06-23 09:30:07,511 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:31:08,785 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:32:37,319 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:36:55,890 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:00,623 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:14,212 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:17,635 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:17,922 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:18,007 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:18,094 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:18,197 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:33,089 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:44,359 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:37:48,057 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:38:03,089 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:38:18,084 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:38:33,089 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:38:48,085 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:39:03,088 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:39:18,084 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:39:33,108 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:39:48,095 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:40:03,088 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:40:18,127 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:40:33,181 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:40:48,131 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:41:03,090 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:41:18,088 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:41:33,088 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:41:48,129 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:42:03,091 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:25,575 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:31,097 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:39,577 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:41,058 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:41,260 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:41,348 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:41,430 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:41,690 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:56,631 WARNING tools.registry: Could not import tool module tools.browser_dialog_tool: No module named 'websockets.asyncio'
+2026-06-23 09:44:56,718 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:44:57,707 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:45:57.
+2026-06-23 09:44:57,899 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:45:57.
+2026-06-23 09:44:59,125 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:45:59.
+2026-06-23 09:45:00,983 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,019 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,054 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,089 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,123 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,158 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,193 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,228 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,263 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,298 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,333 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,368 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,403 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,438 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,473 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,508 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,542 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,577 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,612 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,647 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,682 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,717 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,753 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,788 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,823 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,859 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,894 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,929 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,964 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:01,999 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:02,034 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:11,432 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:26,392 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:41,427 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:45:56,428 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:46:11,433 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:46:26,429 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:46:41,432 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:46:56,430 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:47:11,432 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:47:24,388 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:47:26,402 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build
+2026-06-23 09:47:41,438 WARNING hermes_plugins.raft_platform.adapter: [raft] raft CLI not found in PATH — install from https://raft.build

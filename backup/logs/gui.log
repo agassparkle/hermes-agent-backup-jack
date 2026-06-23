@@ -1,0 +1,11 @@
+2026-06-23 09:29:50,252 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/hermes-achievements/
+2026-06-23 09:29:50,365 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/kanban/
+2026-06-23 09:29:50,380 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-06-23 09:37:14,385 INFO tui_gateway.ws: ws accepted peer=46.196.105.182:55087
+2026-06-23 09:37:14,506 INFO tui_gateway.ws: ws closed peer=46.196.105.182:55087 reason=client_disconnect(code=1005,reason=) messages=0 parse_errors=0 dispatch_crashes=0 send_failures=0 reaped_sessions=0 detached_sessions=0
+2026-06-23 09:37:17,929 INFO tui_gateway.ws: ws accepted peer=46.196.105.182:55097
+2026-06-23 09:42:11,120 INFO tui_gateway.ws: ws closed peer=46.196.105.182:55097 reason=client_disconnect(code=1001,reason=) messages=42 parse_errors=0 dispatch_crashes=0 send_failures=0 reaped_sessions=0 detached_sessions=0
+2026-06-23 09:44:39,663 INFO tui_gateway.ws: ws accepted peer=46.196.105.182:55322
+2026-06-23 09:44:39,743 INFO tui_gateway.ws: ws closed peer=46.196.105.182:55322 reason=client_disconnect(code=1005,reason=) messages=0 parse_errors=0 dispatch_crashes=0 send_failures=0 reaped_sessions=0 detached_sessions=0
+2026-06-23 09:44:41,273 INFO tui_gateway.ws: ws accepted peer=46.196.105.182:55332
+2026-06-23 09:47:51,636 INFO tui_gateway.ws: ws closed peer=46.196.105.182:55332 reason=client_disconnect(code=1001,reason=) messages=36 parse_errors=0 dispatch_crashes=0 send_failures=0 reaped_sessions=0 detached_sessions=2

@@ -1,0 +1,56 @@
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-20T14:58:48Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jun19   0:00 [kthreadd]
+root       27559  0.1  0.0      0     0 ?        I    12:09   0:14  \_ [kworker/1:2-mm_percpu_wq]
+root           1  0.0  0.1  22456 13064 ?        Ss   Jun19   0:08 /usr/lib/systemd/systemd --system --deserialize=74 iscsi_auto_skip_initramfs_networking
+root        4143  0.4  0.3 1352520 46264 ?       Ssl  Jun19   4:33 /usr/sbin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/run/tailscale/tailscaled.sock --port=41641
+--- pstree of self ---
+--- /proc/loadavg ---
+0.26 0.10 0.02 2/256 28456
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-20T14:58:48Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jun19   0:00 [kthreadd]
+root       27559  0.1  0.0      0     0 ?        I    12:09   0:14  \_ [kworker/1:2-events]
+root           1  0.0  0.1  22456 13064 ?        Ss   Jun19   0:08 /usr/lib/systemd/systemd --system --deserialize=74 iscsi_auto_skip_initramfs_networking
+root        4143  0.4  0.3 1352520 46264 ?       Ssl  Jun19   4:33 /usr/sbin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/run/tailscale/tailscaled.sock --port=41641
+--- pstree of self ---
+--- /proc/loadavg ---
+0.26 0.10 0.02 2/250 28467
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-20T17:09:43Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jun19   0:00 [kthreadd]
+root       28667  0.1  0.0      0     0 ?        I    15:29   0:09  \_ [kworker/1:0-events]
+root           1  0.0  0.1  22456 13064 ?        Ss   Jun19   0:09 /usr/lib/systemd/systemd --system --deserialize=74 iscsi_auto_skip_initramfs_networking
+root        4143  0.4  0.3 1352520 46708 ?       Ssl  Jun19   5:09 /usr/sbin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/run/tailscale/tailscaled.sock --port=41641
+--- pstree of self ---
+--- /proc/loadavg ---
+0.05 0.02 0.00 3/253 29434
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-20T17:21:15Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jun19   0:00 [kthreadd]
+root       29456  0.1  0.0      0     0 ?        I    17:09   0:01  \_ [kworker/1:3-events]
+root           1  0.0  0.1  22456 13064 ?        Ss   Jun19   0:09 /usr/lib/systemd/systemd --system --deserialize=74 iscsi_auto_skip_initramfs_networking
+root        4143  0.4  0.3 1352520 46712 ?       Ssl  Jun19   5:12 /usr/sbin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/run/tailscale/tailscaled.sock --port=41641
+--- pstree of self ---
+--- /proc/loadavg ---
+0.05 0.01 0.00 1/252 29758
+--- recent dmesg (oom/killed) ---
+=== end ===
