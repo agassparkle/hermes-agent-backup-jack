@@ -1,0 +1,47 @@
+{
+  "updated_at": "2026-06-23T10:01:56.030647",
+  "platforms": {
+    "telegram": [
+      {
+        "id": "7018493241",
+        "name": "Agas",
+        "type": "dm",
+        "thread_id": null
+      },
+      {
+        "id": "-1003955357178:1",
+        "name": "DedisJackAgas / topic 1",
+        "type": "group",
+        "thread_id": "1"
+      }
+    ],
+    "discord": [],
+    "whatsapp": [],
+    "whatsapp_cloud": [],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "msgraph_webhook": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "relay": [],
+    "google_chat": [],
+    "irc": [],
+    "line": [],
+    "ntfy": [],
+    "photon": [],
+    "raft": [],
+    "simplex": [],
+    "teams": []
+  }
+}
